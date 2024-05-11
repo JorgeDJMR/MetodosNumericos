@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FDC5A7B-0978-441E-8F3F-19AB9C5DCBC3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RaulProyect</RootNamespace>
+    <AssemblyName>RaulProyect</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Calculus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Metodos numericos\Metodos numericos\bin\Debug\Calculus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApolloAJacobi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApolloAJacobi.Designer.cs">
+      <DependentUpon>ApolloAJacobi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Central.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Central.Designer.cs">
+      <DependentUpon>Central.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diferenciación.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diferenciación.Designer.cs">
+      <DependentUpon>Diferenciación.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FalsaPosicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FalsaPosicion.Designer.cs">
+      <DependentUpon>FalsaPosicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauss-Seidel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gauss-Seidel.Designer.cs">
+      <DependentUpon>Gauss-Seidel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gauss.Designer.cs">
+      <DependentUpon>Gauss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaciaAdelante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaciaAdelante.Designer.cs">
+      <DependentUpon>HaciaAdelante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaciaAtras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaciaAtras.Designer.cs">
+      <DependentUpon>HaciaAtras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Integracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Integracion.Designer.cs">
+      <DependentUpon>Integracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iterativo Secuencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iterativo Secuencial.Designer.cs">
+      <DependentUpon>Iterativo Secuencial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bisección.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bisección.Designer.cs">
+      <DependentUpon>Bisección.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuGeneral.Designer.cs">
+      <DependentUpon>MenuGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUnidad3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUnidad3.Designer.cs">
+      <DependentUpon>MenuUnidad3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUnidad4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUnidad4.Designer.cs">
+      <DependentUpon>MenuUnidad4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetodoDeJacobi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetodoDeJacobi.Designer.cs">
+      <DependentUpon>MetodoDeJacobi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newton.Designer.cs">
+      <DependentUpon>Newton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReglaDelTrapecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReglaDelTrapecio.Designer.cs">
+      <DependentUpon>ReglaDelTrapecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReglaDelTrapecioPorIntervalos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReglaDelTrapecioPorIntervalos.Designer.cs">
+      <DependentUpon>ReglaDelTrapecioPorIntervalos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReglaDeSimpsonTresOctavos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReglaDeSimpsonTresOctavos.Designer.cs">
+      <DependentUpon>ReglaDeSimpsonTresOctavos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReglaDeSimpsonUnTercio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReglaDeSimpsonUnTercio.Designer.cs">
+      <DependentUpon>ReglaDeSimpsonUnTercio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReglaDeSimpsonUnTercioPorIntervalos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReglaDeSimpsonUnTercioPorIntervalos.Designer.cs">
+      <DependentUpon>ReglaDeSimpsonUnTercioPorIntervalos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secante.Designer.cs">
+      <DependentUpon>Secante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simple.Designer.cs">
+      <DependentUpon>Simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabajosUnidad1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabajosUnidad1.Designer.cs">
+      <DependentUpon>TabajosUnidad1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ApolloAJacobi.resx">
+      <DependentUpon>ApolloAJacobi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central.resx">
+      <DependentUpon>Central.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diferenciación.resx">
+      <DependentUpon>Diferenciación.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FalsaPosicion.resx">
+      <DependentUpon>FalsaPosicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gauss-Seidel.resx">
+      <DependentUpon>Gauss-Seidel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gauss.resx">
+      <DependentUpon>Gauss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaciaAdelante.resx">
+      <DependentUpon>HaciaAdelante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaciaAtras.resx">
+      <DependentUpon>HaciaAtras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Integracion.resx">
+      <DependentUpon>Integracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iterativo Secuencial.resx">
+      <DependentUpon>Iterativo Secuencial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bisección.resx">
+      <DependentUpon>Bisección.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGeneral.resx">
+      <DependentUpon>MenuGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUnidad3.resx">
+      <DependentUpon>MenuUnidad3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUnidad4.resx">
+      <DependentUpon>MenuUnidad4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetodoDeJacobi.resx">
+      <DependentUpon>MetodoDeJacobi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newton.resx">
+      <DependentUpon>Newton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReglaDelTrapecio.resx">
+      <DependentUpon>ReglaDelTrapecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReglaDelTrapecioPorIntervalos.resx">
+      <DependentUpon>ReglaDelTrapecioPorIntervalos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReglaDeSimpsonTresOctavos.resx">
+      <DependentUpon>ReglaDeSimpsonTresOctavos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReglaDeSimpsonUnTercio.resx">
+      <DependentUpon>ReglaDeSimpsonUnTercio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReglaDeSimpsonUnTercioPorIntervalos.resx">
+      <DependentUpon>ReglaDeSimpsonUnTercioPorIntervalos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secante.resx">
+      <DependentUpon>Secante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simple.resx">
+      <DependentUpon>Simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabajosUnidad1.resx">
+      <DependentUpon>TabajosUnidad1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
